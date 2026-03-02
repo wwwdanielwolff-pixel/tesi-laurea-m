@@ -1,0 +1,2 @@
+MCC_mean,MCC_sd,thr_mean,Recall_mean,Precision_mean,mtry,min_node,class_w_mult,scenario
+0.7508730017869902,0.034786865060217116,0.552,0.6375482625482626,0.9509322975734682,5,10,1,DAY20

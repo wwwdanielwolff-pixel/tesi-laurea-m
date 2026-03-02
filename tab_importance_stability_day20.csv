@@ -1,0 +1,12 @@
+feature,importance_mean,importance_sd,topk_count,topk_freq,group
+pct_goal_cum_d20,0.13591603192123358,4.279349570892466e-4,20,1,Early traction (cumulata)
+donors_cum_d20,0.01652062179936668,3.8460592980878974e-4,20,1,Early traction (cumulata)
+log_goal_amount,0.013841849038220718,2.902357031282499e-4,20,1,Strutturali/Goal
+campaign_duration,0.010271662390946894,1.9551970954471377e-4,20,1,Tempo (durata)
+sadness,0.005733557378162919,1.7537229765631764e-4,20,1,Emozioni (raw)
+text_length,0.0031205392609246685,1.3588192060519326e-4,20,1,Testo (stile/lunghezza)
+emotional_balance,0.0017732178263469799,1.2106058884070156e-4,20,1,Emozioni (indici)
+parole_per_frase,0.0014435712723109993,9.770218160341261e-5,20,1,Testo (stile/lunghezza)
+caratteri_per_parola,0.001440639039328889,1.0160365655929217e-4,20,1,Testo (stile/lunghezza)
+gratitude,0.001309173661659442,9.601528425923072e-5,20,1,Emozioni (raw)
+category_map,0.0012728200924759258,1.1934790123369034e-4,20,1,Categoria

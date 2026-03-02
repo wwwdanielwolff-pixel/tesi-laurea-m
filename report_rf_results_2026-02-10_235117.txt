@@ -1,0 +1,53 @@
+========================================================================================== 
+REPORT — Random Forest (MCC + AUC) — 2026-02-10_235117 
+==========================================================================================
+ 
+A) Vincolo informativo / anti-leakage (coerente con la tesi) 
+- Due scenari separati: 
+  EX-ANTE: feature note al lancio + campaign_duration (come nel dataset EDA). 
+  DAY-20 : EX-ANTE + early traction cumulata a 20 giorni (pct_goal_cum_d20, donors_cum_d20). 
+- Variabili proxy dell'outcome o snapshot finali rimosse (current_amount, donor_count, share_complete, performance, money_*...).
+ 
+B) Validazione e sbilanciamento 
+- Holdout temporale robusto se created_date disponibile; altrimenti split stratificato. 
+- Class imbalance gestito con class weights nel RF. 
+- Soglia decisionale stimata massimizzando MCC su predizioni OOF (K-fold) nel training (stima 'honest').
+ 
+C) Risultati su TEST (MCC e AUC come 'informazione acquisita') 
+# A tibble: 2 × 19
+   scenario_label n_train n_test threshold_star   MCC   AUC AUC_CI_low AUC_CI_high Balanced_Accuracy Precision
+   <chr>            <int>  <int>          <dbl> <dbl> <dbl>      <dbl>       <dbl>             <dbl>     <dbl>
+ 1 EX-ANTE           4108   1027           0.33 0.114 0.527      0.474       0.579             0.553     0.258
+ 2 DAY-20            4108   1027           0.57 0.560 0.868      0.836       0.901             0.753     0.697
+ # ℹ 9 more variables: Recall <dbl>, Specificity <dbl>, F1 <dbl>, LogLoss <dbl>, Brier <dbl>, TP <int>,
+ #   TN <int>, FP <int>, FN <int>
+ 
+D) Delta DAY-20 minus EX-ANTE (guadagno informativo) 
+Le righe con delta maggiore (in valore assoluto) quantificano l'incremento di informazione dato dall'early traction. 
+# A tibble: 10 × 4
+    metric            `EX-ANTE` `DAY-20` delta_day20_minus_exante
+    <chr>                 <dbl>    <dbl>                    <dbl>
+  1 MCC                   0.114   0.560                    0.445 
+  2 Precision             0.258   0.697                    0.439 
+  3 F1                    0.237   0.614                    0.377 
+  4 AUC                   0.527   0.868                    0.342 
+  5 Recall                0.219   0.548                    0.329 
+  6 threshold_star        0.33    0.57                     0.24  
+  7 Balanced_Accuracy     0.553   0.753                    0.199 
+  8 LogLoss               0.454   0.300                   -0.154 
+  9 Specificity           0.888   0.958                    0.0700
+ 10 Brier                 0.139   0.0899                  -0.0490
+ 
+E) Interpretazione mirata alla tua domanda di ricerca 
+- AUC: migliora se il ranking probabilistico è più informativo (misura threshold-free). 
+- MCC: migliora se, fissata una regola operativa (soglia), aumenta la qualità della classificazione sotto sbilanciamento. 
+- Se DAY-20 mostra incremento simultaneo di AUC e MCC, l'evidenza è coerente con: 'la trazione iniziale contiene informazione addizionale sostanziale rispetto alle sole feature testuali/strutturali'.
+ 
+F) Importanza delle variabili (per mostrare che le emozioni sono marginali) 
+- Tabelle: tab_importance_stability_exante.csv / day20.csv 
+- Aggregazione per gruppi: tab_importance_by_group_exante.csv / day20.csv 
+  Atteso: traction (pct_goal_cum_d20, donors_cum_d20) domina in DAY-20; emozioni (raw/indici) hanno importanza bassa e instabile.
+ 
+========================================================================================== 
+FINE REPORT 
+========================================================================================== 
