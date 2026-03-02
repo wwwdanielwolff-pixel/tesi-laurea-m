@@ -1,0 +1,143 @@
+============================================================================== 
+BART DAILY MODELS + DCA RUN: 2026-02-10_013307 
+Data path: ~/04_tesim/Data_processed/dataset_full_preprocessed.csv 
+============================================================================== 
+N dopo filtro outcome: 5135 
+INFO: colonne potenzialmente leakage presenti (IGNORATE): current_amount, donor_count, avg_donation, money_difference, money_missing, money_excess, donors_per_goal, performance, goal_performance, goal_reached, threshold, share_complete, log_share_complete, y 
+CV folds: 5 | seed=123 | strata=category_map 
+------------------------------------------------------------------------------ 
+Fit BART per giorni 1..20 con CV + DCA + VOI 
+------------------------------------------------------------------------------ 
+
+[DAY 1] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day1_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day1_T100_fold1.csv 
+  rmse_pct=31.46 | rmse_y=0.326 | cov95_pct=0.309 
+
+[DAY 2] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day2_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day2_T100_fold1.csv 
+  rmse_pct=29.777 | rmse_y=0.314 | cov95_pct=0.331 
+
+[DAY 3] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day3_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day3_T100_fold1.csv 
+  rmse_pct=29.125 | rmse_y=0.315 | cov95_pct=0.346 
+
+[DAY 4] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day4_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day4_T100_fold1.csv 
+  rmse_pct=28.496 | rmse_y=0.318 | cov95_pct=0.365 
+
+[DAY 5] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day5_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day5_T100_fold1.csv 
+  rmse_pct=28.199 | rmse_y=0.315 | cov95_pct=0.358 
+
+[DAY 6] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day6_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day6_T100_fold1.csv 
+  rmse_pct=28.045 | rmse_y=0.307 | cov95_pct=0.376 
+
+[DAY 7] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day7_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day7_T100_fold1.csv 
+  rmse_pct=28.032 | rmse_y=0.301 | cov95_pct=0.371 
+
+[DAY 8] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day8_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day8_T100_fold1.csv 
+  rmse_pct=27.879 | rmse_y=0.307 | cov95_pct=0.37 
+
+[DAY 9] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day9_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day9_T100_fold1.csv 
+  rmse_pct=27.611 | rmse_y=0.296 | cov95_pct=0.377 
+
+[DAY 10] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day10_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day10_T100_fold1.csv 
+  rmse_pct=27.642 | rmse_y=0.301 | cov95_pct=0.371 
+
+[DAY 11] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day11_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day11_T100_fold1.csv 
+  rmse_pct=27.674 | rmse_y=0.295 | cov95_pct=0.379 
+
+[DAY 12] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day12_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day12_T100_fold1.csv 
+  rmse_pct=27.532 | rmse_y=0.296 | cov95_pct=0.37 
+
+[DAY 13] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day13_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day13_T100_fold1.csv 
+  rmse_pct=27.388 | rmse_y=0.296 | cov95_pct=0.369 
+
+[DAY 14] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day14_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day14_T100_fold1.csv 
+  rmse_pct=27.473 | rmse_y=0.297 | cov95_pct=0.378 
+
+[DAY 15] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day15_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day15_T100_fold1.csv 
+  rmse_pct=27.412 | rmse_y=0.296 | cov95_pct=0.372 
+
+[DAY 16] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day16_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day16_T100_fold1.csv 
+  rmse_pct=27.345 | rmse_y=0.296 | cov95_pct=0.377 
+
+[DAY 17] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day17_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day17_T100_fold1.csv 
+  rmse_pct=27.198 | rmse_y=0.295 | cov95_pct=0.387 
+
+[DAY 18] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day18_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day18_T100_fold1.csv 
+  rmse_pct=27.239 | rmse_y=0.297 | cov95_pct=0.378 
+
+[DAY 19] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day19_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day19_T100_fold1.csv 
+  rmse_pct=27.182 | rmse_y=0.294 | cov95_pct=0.37 
+
+[DAY 20] 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day20_T75_fold1.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_curve_day20_T100_fold1.csv 
+  rmse_pct=27.1 | rmse_y=0.295 | cov95_pct=0.37 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/cv_fold_metrics_day1_20.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/cv_day_metrics_summary_day1_20.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_fold_metrics_day1_20.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/features_used_by_day.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/decisional_day_by_target.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_day_utility_summary.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/voi_summary_maxNBpoint.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/voi_summary_maxNBlow90.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/stop_waiting_day.csv 
+STOP-WAITING days (rule=NB_ROBUST, c_wait=0.002): T75->d4 | T100->d3 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/key_days_selection.csv 
+
+KEY DAYS (RMSE_pct): 
+  best_day=20 | near_day=9 | plateau_day=16 | peak_days= 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_01_rmse_pct_by_day.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_02_delta_gain_rmse_pct.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_03_coverage95_pct_by_day.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_04_scatter_key_days_pct.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_05_dca_day9_T75.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_05_dca_day9_T100.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_05_dca_day16_T75.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_05_dca_day16_T100.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_06_voi_T75_maxNBpoint.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_07_voi_T75_maxNBlow90.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_06_voi_T100_maxNBpoint.png 
+✓ Salvata figura: ~/04_tesim/Models_BART/Figures/fig_07_voi_T100_maxNBlow90.png 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/dca_key_days_summary.csv 
+✓ Salvata tabella: ~/04_tesim/Models_BART/Tables/key_days_performance_one_glance.csv 
+✓ Report markdown scritto: ~/04_tesim/Models_BART/Report/report_bart_day1_20_2026-02-10_013307.md 
+✓ Report HTML renderizzato in: ~/04_tesim/Models_BART/Report 
+
+✓ Fine run. 
+Output root: ~/04_tesim/Models_BART 

@@ -1,0 +1,2 @@
+best_day,near_day,plateau_day,peak_days,eps_rel,k_plateau,peak_quantile,plateau_quantile
+20,9,16,,0.02,3,0.75,0.25
