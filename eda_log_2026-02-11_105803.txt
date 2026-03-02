@@ -1,0 +1,102 @@
+============================================================================== 
+EDA RUN: 2026-02-11_105803 
+Data path: ~/04_tesim/Data_raw/dataframe_gofundme_complete_nomissingGoalAmount.csv 
+============================================================================== 
+Dataset caricato. N = 5136 | P = 44 
+Calcolo EARLY TRACTION CUMULATA 1..20 (amount, donors, pct). 
+   ... righe processate: 500/5136 
+   ... righe processate: 1000/5136 
+   ... righe processate: 1500/5136 
+   ... righe processate: 2000/5136 
+   ... righe processate: 2500/5136 
+   ... righe processate: 3000/5136 
+   ... righe processate: 3500/5136 
+   ... righe processate: 4000/5136 
+   ... righe processate: 4500/5136 
+   ... righe processate: 5000/5136 
+✓ EARLY TRACTION CUMULATA 1..20 completata. 
+✓ FULL salvato: ~/04_tesim/EDA_files/Data_processed/dataset_full_preprocessed.csv 
+
+------------------------------------------------------------------------------ 
+OUTLIERS: percentili estremi (P_LOWER=0.005, P_UPPER=0.995) 
+------------------------------------------------------------------------------ 
+donor_count                        : [1.000, 2000.000] -> 25 outliers 
+n_caratteri                        : [26.000, 6137.650] -> 50 outliers 
+goal_amount                        : [200.000, 259750.000] -> 47 outliers 
+duration_days                      : [6.000, 2493.625] -> 43 outliers 
+share_complete                     : [0.001, 6.993] -> 51 outliers 
+goal_performance                   : [0.001, 1.000] -> 25 outliers 
+log_share_complete                 : [0.001, 2.078] -> 51 outliers 
+pct_goal_cum_d1                    : [0.000, 1.266] -> 26 outliers 
+pct_goal_cum_d2                    : [0.000, 1.752] -> 26 outliers 
+pct_goal_cum_d3                    : [0.000, 2.091] -> 26 outliers 
+pct_goal_cum_d4                    : [0.000, 2.412] -> 26 outliers 
+pct_goal_cum_d5                    : [0.000, 2.446] -> 26 outliers 
+pct_goal_cum_d6                    : [0.000, 2.466] -> 26 outliers 
+pct_goal_cum_d7                    : [0.000, 2.666] -> 26 outliers 
+pct_goal_cum_d8                    : [0.000, 2.673] -> 26 outliers 
+pct_goal_cum_d9                    : [0.000, 2.686] -> 26 outliers 
+pct_goal_cum_d10                   : [0.000, 2.690] -> 26 outliers 
+pct_goal_cum_d11                   : [0.000, 2.816] -> 26 outliers 
+pct_goal_cum_d12                   : [0.000, 2.816] -> 26 outliers 
+pct_goal_cum_d13                   : [0.000, 2.816] -> 26 outliers 
+pct_goal_cum_d14                   : [0.000, 2.816] -> 26 outliers 
+pct_goal_cum_d15                   : [0.000, 2.882] -> 26 outliers 
+pct_goal_cum_d16                   : [0.000, 2.882] -> 26 outliers 
+pct_goal_cum_d17                   : [0.000, 2.882] -> 26 outliers 
+pct_goal_cum_d18                   : [0.000, 2.882] -> 26 outliers 
+pct_goal_cum_d19                   : [0.000, 2.882] -> 26 outliers 
+pct_goal_cum_d20                   : [0.000, 2.916] -> 26 outliers 
+donors_cum_d1                      : [0.000, 107.975] -> 26 outliers 
+donors_cum_d2                      : [0.000, 199.275] -> 26 outliers 
+donors_cum_d3                      : [0.000, 242.200] -> 26 outliers 
+donors_cum_d4                      : [0.000, 279.250] -> 26 outliers 
+donors_cum_d5                      : [0.000, 293.925] -> 26 outliers 
+donors_cum_d6                      : [0.000, 311.950] -> 26 outliers 
+donors_cum_d7                      : [0.000, 332.600] -> 26 outliers 
+donors_cum_d8                      : [0.000, 338.925] -> 26 outliers 
+donors_cum_d9                      : [0.000, 344.950] -> 26 outliers 
+donors_cum_d10                     : [0.000, 350.650] -> 26 outliers 
+donors_cum_d11                     : [0.000, 357.950] -> 26 outliers 
+donors_cum_d12                     : [0.000, 367.600] -> 26 outliers 
+donors_cum_d13                     : [0.000, 369.950] -> 26 outliers 
+donors_cum_d14                     : [0.000, 372.650] -> 26 outliers 
+donors_cum_d15                     : [0.000, 373.325] -> 26 outliers 
+donors_cum_d16                     : [0.000, 374.000] -> 24 outliers 
+donors_cum_d17                     : [0.000, 374.000] -> 25 outliers 
+donors_cum_d18                     : [0.000, 374.000] -> 25 outliers 
+donors_cum_d19                     : [0.000, 374.000] -> 25 outliers 
+donors_cum_d20                     : [0.000, 374.000] -> 25 outliers 
+Outliers totali (>=1 variabile): 247 (4.81%) 
+Dataset EDA clean. N = 4889 
+✓ EDA clean salvato: ~/04_tesim/EDA_files/Data_processed/dataset_eda_clean.csv 
+   ✓ Salvata tabella: tab_00_outcome_summary.csv 
+   ✓ Salvata tabella: tab_01_success_by_category.csv 
+   ✓ Salvata tabella: tab_02_success_by_donor_quintile.csv 
+   ✓ Salvata tabella: tab_04_operational_thresholds_day1_20.csv 
+
+------------------------------------------------------------------------------ 
+FIGURE: base + early traction (DAY & CUM) su TUTTI i giorni 1..20 
+------------------------------------------------------------------------------ 
+   ✓ Salvata figura: fig_01a_share_complete.png 
+   ✓ Salvata figura: fig_01b_goal_performance.png 
+   ✓ Salvata figura: fig_01c_log_share_complete.png 
+   ✓ Salvata figura: fig_02_goal_reached_imbalance.png 
+   ✓ Salvata figura: fig_03a_donor_vs_performance.png 
+   ✓ Salvata figura: fig_03b_success_by_donor_quintile.png 
+   ✓ Salvata figura: fig_03c_donor_vs_log_outcome.png 
+   ✓ Salvata figura: fig_04a_text_length_vs_performance.png 
+   ✓ Salvata figura: fig_04b_heatmap_text_x_emotion.png 
+   ✓ Salvata figura: fig_05_correlation_matrix.png 
+   ✓ Salvata figura: fig_06_trajectory_pct_cum_day1_20.png 
+   (skip) fig_07: nessuna colonna pct_goal_day_d1..d20 trovata. 
+   ✓ Salvata figura: fig_08_success_rate_thresholds_day1_20.png 
+   ✓ Salvata figura: fig_09_first_day_reach_thresholds.png 
+   ✓ Salvata figura: fig_10_heatmap_success_threshold_by_day.png 
+
+✓ Fine run. 
+ - FULL: ~/04_tesim/EDA_files/Data_processed/dataset_full_preprocessed.csv 
+ - EDA : ~/04_tesim/EDA_files/Data_processed/dataset_eda_clean.csv 
+ - Figures: ~/04_tesim/EDA_files/Figures 
+ - Tables : ~/04_tesim/EDA_files/Tables 
+ - Log    : ~/04_tesim/EDA_files/Logs/eda_log_2026-02-11_105803.txt 
