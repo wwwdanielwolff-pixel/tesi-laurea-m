@@ -1,0 +1,10 @@
+feature,importance_mean,importance_sd,topk_count,topk_freq,group
+log_goal_amount,0.022191615583180967,2.5124313007718324e-4,20,1,Strutturali/Goal
+sadness,0.010465590407324615,3.125740392741029e-4,20,1,Emozioni (raw)
+emotional_balance,0.009000014910363159,2.3983492386167357e-4,20,1,Emozioni (indici)
+text_length,0.007255065094801118,3.8711238462249895e-4,20,1,Testo (stile/lunghezza)
+campaign_duration,0.006698268441328988,1.8657650692425814e-4,20,1,Tempo (durata)
+parole_per_frase,0.006677341321468774,2.816929647294075e-4,20,1,Testo (stile/lunghezza)
+gratitude,0.0062706656312548886,3.092872687251362e-4,20,1,Emozioni (raw)
+caratteri_per_parola,0.00421673747018317,1.696035354192257e-4,20,1,Testo (stile/lunghezza)
+category_map,0.0014839806381720174,1.1806870976946211e-4,20,1,Categoria

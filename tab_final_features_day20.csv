@@ -1,0 +1,12 @@
+scenario,feature
+DAY20,log_goal_amount
+DAY20,category_map
+DAY20,campaign_duration
+DAY20,pct_goal_cum_d20
+DAY20,donors_cum_d20
+DAY20,sadness
+DAY20,text_length
+DAY20,emotional_balance
+DAY20,parole_per_frase
+DAY20,caratteri_per_parola
+DAY20,gratitude
